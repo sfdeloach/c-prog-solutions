@@ -9,14 +9,14 @@ Also, this project is used to familiarize myself with git and github, working
 on this project on different machines and using common commands to organize
 my work.
 
-My own personal cheat sheet:
+My own personal GIT cheat sheet:
 
- - git init         
+ - git init
  
                     The first command used to initialize the project, executed
                     in the root working directory of the project
                     
- - git add *        
+ - git add *
  
                     How to add files to the stage
  
@@ -38,7 +38,7 @@ My own personal cheat sheet:
                     This will pull all files from the repository to your
                     working local directory
                     
- - git status       
+ - git status
  
                     Gives a snapshot of the stage
  
