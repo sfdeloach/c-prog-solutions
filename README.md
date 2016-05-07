@@ -11,10 +11,18 @@ my work.
 
 My own personal cheat sheet:
 
- - git init         The first command used to initialize the project, executed
+ - git init         
+ 
+                    The first command used to initialize the project, executed
                     in the root working directory of the project
                     
- - git add *        How to add files to the stage
+ - git add *        
+ 
+                    How to add files to the stage
+ 
+ - git commit -m "put a message here, this is optional"
+ 
+                    This commits your changes
  
  - git remote add origin https://github.com/sfdeloach/c-prog-solutions.git
                     
@@ -30,6 +38,10 @@ My own personal cheat sheet:
                     This will pull all files from the repository to your
                     working local directory
                     
- - git status       Gives a snapshot of the stage
+ - git status       
  
- - git log          Gives a record of your commits 
+                    Gives a snapshot of the stage
+ 
+ - git log          
+ 
+                    Gives a record of your commits 

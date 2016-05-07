@@ -11,7 +11,33 @@ my work.
 
 My own personal cheat sheet:
 
- - git init         The first command used to initialize the project, executed
+ - git init         
+ 
+                    The first command used to initialize the project, executed
                     in the root working directory of the project
                     
- - git 
+ - git add *        
+ 
+                    How to add files to the stage
+ 
+ - git remote add origin https://github.com/sfdeloach/c-prog-solutions.git
+                    
+                    This is how connect the working directory on your machine
+                    with the repository on github, a one-time setup command
+                    
+ - git push origin master
+ 
+                    This will push all staged files to the repository
+                    
+ - git pull origin master
+ 
+                    This will pull all files from the repository to your
+                    working local directory
+                    
+ - git status       
+ 
+                    Gives a snapshot of the stage
+ 
+ - git log          
+ 
+                    Gives a record of your commits 
