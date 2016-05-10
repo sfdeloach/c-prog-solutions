@@ -1,6 +1,13 @@
+/*
+    Exercise 1-14
+
+    Write a program to print a histogram of the frequencies of different
+    characters in its input.
+*/
+
 #include <stdio.h>
-#define SCREEN_WIDTH 60.0
-#define SYMBOL '-'
+#define SCREEN_WIDTH 70.0
+#define SYMBOL '*'
 
 int main(void) {
     int c, i, j, alphabet[26], other, ws, max;
@@ -50,23 +57,23 @@ int main(void) {
     printf("  white space - %d\n", ws);
     printf("  other - %d\n", other);
     printf("  max - %d\n", max);
-    printf("  scale - %f\n", scale);
+    printf("  scale - %f\n\n", scale);
 
 	// Print histogram
 	printf("Histogram:\n");
     for (i = 0; i < (sizeof(alphabet)/sizeof(alphabet[0])); ++i) {
-        printf("  %c - ", i + 'a');
+        printf("    %c - ", i + 'a');
         for (j = 0; j < (alphabet[i]/scale); ++j) {
         	putchar(SYMBOL);
         }
         printf("\n");
     }
-    printf(" ws - ");
+    printf("   ws - ");
     for (i = 0; i < ws/scale; ++i) {
         putchar(SYMBOL);
     }
     printf("\n");
-    printf("oth - ");
+    printf("other - ");
     for (i = 0; i < other/scale; ++i) {
         putchar(SYMBOL);
     }
