@@ -7,7 +7,7 @@
 
 #include <stdio.h>
 #define SCREEN_WIDTH 70.0
-#define SYMBOL '*'
+#define SYMBOL "\u2501"
 
 int main(void) {
     int c, i, j, alphabet[26], other, ws, max;
@@ -62,20 +62,20 @@ int main(void) {
 	// Print histogram
 	printf("Histogram:\n");
     for (i = 0; i < (sizeof(alphabet)/sizeof(alphabet[0])); ++i) {
-        printf("    %c - ", i + 'a');
+        printf("    %c \u2502 ", i + 'a');
         for (j = 0; j < (alphabet[i]/scale); ++j) {
-        	putchar(SYMBOL);
+        	printf(SYMBOL);
         }
         printf("\n");
     }
-    printf("   ws - ");
+    printf("   ws \u2502 ");
     for (i = 0; i < ws/scale; ++i) {
-        putchar(SYMBOL);
+        printf(SYMBOL);
     }
     printf("\n");
-    printf("other - ");
+    printf("other \u2502 ");
     for (i = 0; i < other/scale; ++i) {
-        putchar(SYMBOL);
+        printf(SYMBOL);
     }
     printf("\n");
     
