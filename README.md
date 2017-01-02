@@ -26,7 +26,7 @@ My own personal GIT cheat sheet:
  
  - git remote add origin https://github.com/sfdeloach/c-prog-solutions.git
                     
-                    This is how connect the working directory on your machine
+                    This is how to connect the working directory on your machine
                     with the repository on github, a one-time setup command
                     
  - git push origin master
