@@ -42,6 +42,16 @@ My own personal GIT cheat sheet:
  
                     Gives a snapshot of the stage
  
- - git log          
+ - git log
  
-                    Gives a record of your commits 
+                    Gives a record of your commits
+                    
+ - git rm -r --cached node_modules
+ - git commit -m 'Remove the now ignored directory node_modules'
+ - git push origin master
+ 
+                    This is how to remove a directory (named node_modules) from
+                    your git repo...node_modules is a good directory to not
+                    include in your repo due its size and availability to
+                    download via npm
+ 
