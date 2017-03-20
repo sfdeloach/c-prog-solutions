@@ -18,9 +18,9 @@ How to add files to the stage:
 
     git add *
  
-This commits your changes:
+This commits your changes, commit messages should be present tense:
 
-    git commit -m "put a message here, this is optional"
+    git commit -m "add javascript file"
 
 This is how to connect the working directory on your machine with the repository on github, a one-time setup command:
 
@@ -41,6 +41,11 @@ Gives a snapshot of the stage:
 Gives a record of your commits:
 
     git log
+    
+Checkout a previous commit or a branch from your repository:
+
+    git checkout <<hash from git log>> // to revert to a previous commit
+    git checkout master                // for the head to resume on the master commit
 
 This is how to remove a directory (named node-modules) from your git repo...node-modules is a good directory to not include in your repo due its size and availability to download via npm:
 
