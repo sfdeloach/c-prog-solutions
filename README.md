@@ -22,6 +22,10 @@ This commits your changes, commit messages should be present tense:
 
     git commit -m "add javascript file"
 
+This is how you check to see what remote repositories are associated with your local repo:
+
+    git remote -v
+
 This is how to connect the working directory on your machine with the repository on github, a one-time setup command:
 
     git remote add origin https://github.com/sfdeloach/c-prog-solutions.git
