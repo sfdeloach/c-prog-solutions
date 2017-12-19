@@ -75,3 +75,17 @@ Create and checkout a new branch named `<branch>`. Drop the `-b` flag to checkou
 Merge `<branch>` into the current branch.
 
     git merge <branch>
+
+#### Rename a Local Branch and a Remote Branch
+
+Rename the branch locally.
+
+    git branch -m <old branch> <new branch>
+    
+Delete the old branch from your remote repository.
+
+    git push origin :<old branch>  // <-- note the colon ':' preceeding the name of the old branch
+    
+Push the new branch, set the local branch to track the new remote branch
+
+    git push --set-upstream origin <new branch>
