@@ -10,6 +10,8 @@ Also, this project is used to familiarize myself with git and github, working on
 
 ### My own personal GIT cheat sheet:
 
+#### Git Basics
+
 The first command used to initialize the project, executed in the root working directory of the project:
 
     git init
@@ -21,6 +23,16 @@ How to add files to the stage:
 This commits your changes, commit messages should be present tense:
 
     git commit -m "add javascript file"
+
+Gives a snapshot of the stage:
+
+    git status
+
+Gives a record of your commits:
+
+    git log
+
+#### Remote Repositories
 
 This is how you check to see what remote repositories are associated with your local repo:
 
@@ -38,14 +50,6 @@ This will pull all files from the repository to your working local directory:
 
     git pull origin master
 
-Gives a snapshot of the stage:
-
-    git status
-
-Gives a record of your commits:
-
-    git log
-    
 Checkout a previous commit or a branch from your repository:
 
     git checkout <<hash from git log>> // to revert to a previous commit
@@ -57,3 +61,17 @@ This is how to remove a directory (named node-modules) from your git repo...node
     git commit -m 'Remove the now ignored directory node_modules'
     git push origin master
 
+#### Git Branches
+
+List all of the branches in your repo. Add a `<branch>` argument to create a new branch with the name `<branch>`.
+
+    git branch
+    git branch <branch>
+
+Create and checkout a new branch named `<branch>`. Drop the `-b` flag to checkout an existing branch.
+
+    git checkout -b <branch>
+    
+Merge `<branch>` into the current branch.
+
+    git merge <branch>
