@@ -3,12 +3,11 @@
 
 My humble attempt to provide solutions to the problem sets listed in the magnum opus "The C Programming Language, Second Edition" by Brian W. Kernighan and Dennis M. Ritchie.
 
-Absolutely no guarantees are made for the correctness or completeness of these
-solutions!
+Absolutely no guarantees are made for the correctness or completeness of these solutions!
 
 Also, this project is used to familiarize myself with git and github, working on this project on different machines and using common commands to organize my work.
 
-### My own personal GIT cheat sheet:
+### My git cheat sheet:
 
 #### Git Basics
 
@@ -63,29 +62,39 @@ This is how to remove a directory (named node-modules) from your git repo...node
 
 #### Git Branches
 
-List all of the branches in your repo. Add a `<branch>` argument to create a new branch with the name `<branch>`.
+List all of the branches in your repo. Add a `<branch>` argument to create a new branch with the name `<branch>`:
 
     git branch
     git branch <branch>
 
-Create and checkout a new branch named `<branch>`. Drop the `-b` flag to checkout an existing branch.
+Create and checkout a new branch named `<branch>`. Drop the `-b` flag to checkout an existing branch:
 
     git checkout -b <branch>
     
-Merge `<branch>` into the current branch.
+Merge `<branch>` into the current branch:
 
     git merge <branch>
 
 #### Rename a Local Branch and a Remote Branch
 
-Rename the branch locally.
+Rename the branch locally:
 
     git branch -m <old branch> <new branch>
     
-Delete the old branch from your remote repository.
+Delete the old branch from your remote repository:
 
     git push origin :<old branch>  // <-- note the colon ':' preceeding the name of the old branch
     
-Push the new branch, set the local branch to track the new remote branch
+Push the new branch, set the local branch to track the new remote branch:
 
     git push --set-upstream origin <new branch>
+
+#### Fetch a remote branch and set as a local branch
+
+First fetch the branch from your repository:
+
+    git fetch origin <remote branch>
+    
+Then set your local branch to track changes made on the remote branch:
+
+    git checkout --track origin/<remote branch>
